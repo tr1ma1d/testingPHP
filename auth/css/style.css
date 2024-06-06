@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-font: 300 18px/18px 'Roboto', sans-serif;
+    --main-title: 400 32px/32px 'Roboto', sans-serif;
+    --low-title: 400 24px/24px 'Roboto', sans-serif;
+    --small-font: 300 12px/12px 'Roboto', sans-serif;
+    --gradent: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,20,209,1) 35%, rgba(120,10,119,1) 56%, rgba(162,0,255,1) 100%);
+    --btn-gradient: linear-gradient(90deg, rgba(35,20,209,1) 9%, rgba(157,11,155,1) 51%, rgba(162,0,255,1) 100%);
+}
+body{
+    background: rgb(2,0,36);
+    background: var(--gradent);
+    display: flex;
+    padding: 6% 0 ;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 6%;
+
+}
+.first-container{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.title{
+    font: var(--main-title);
+}
+.second-container{
+    grid-area: 1 / 2 / 2 / 3;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 23px 23px 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20% 0;
+    background: #e5e5e5;
+
+
+}
+.second__title{
+    font: var(--main-title);
+    margin: 5px 0;
+}
+.input-from{
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    padding: 0 10px;
+}
+.btn{
+    border-radius: 20px;
+    height: 35px;
+    width: 125px;
+    border: 0;
+    color: white;
+    background: black;
+    transition: background 0.5s ease
+}
+.btn:hover{
+    background: rgb(35,20,209);
+}
+.input-from, .btn{
+    font: var(--main-font);
+    margin: 5px 0;
+
+}
+.link-register{
+
+    font: var(--small-font);
+}
+
+
+
+.register-container{
+    background-color: #e5e5e5;
+    width: 400px;
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+    flex-shrink: 2;
+}
+.register-container > .title{
+    margin: 125px 0 0 0;
+}
+.register-container > .form{
+    margin: 50px 0 0 0;
+}
+.register-container > .form > .input-from{
+    margin: 10px 0;
+    height: 40px;
+}
+
